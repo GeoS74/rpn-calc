@@ -2,11 +2,11 @@
 
 #define MAXVAL 100 /*максимальная глубина стека*/
 
-double stack[MAXVAL];
-int sp = 0; /*следующая свободная позиция*/
+static double stack[MAXVAL];
+static int sp = 0; /*следующая свободная позиция*/
 
-double ans = 0.0; /*последний вычисленный результат*/
-double lastp = 0.0; /*последний выведенный командой print**/
+static double ans = 0.0; /*последний вычисленный результат*/
+static double lastp = 0.0; /*последний выведенный командой print**/
 
 void push(double n) {
     if(sp < MAXVAL) 

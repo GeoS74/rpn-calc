@@ -2,8 +2,8 @@
 
 #define BUFSIZE 100
 
-char buf[BUFSIZE];
-int bp = 0; /*следующая свободная позиция буфера*/
+static char buf[BUFSIZE];
+static int bp = 0; /*следующая свободная позиция буфера*/
 
 int getch(void) {
     return bp > 0 ? buf[--bp] : getchar();
